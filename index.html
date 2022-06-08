@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        "use strict";
+
+        window["sandbox-alpha"] = {
+          title: "alpha page",
+        };
+      })();
+      (function () {
+        "use strict";
+
+        window["sandbox-delta"] = {
+          title: "delta page",
+        };
+      })();
+    </script>
+    <div id="app"></div>
+    <sandbox-alpha></sandbox-alpha>
+    <sandbox-delta></sandbox-delta>
+    <script type="module" src="/src/main.js"></script>
+    <script src="./dist/js/chunk-vendors.js"></script>
+    <script src="./dist/js/app.js"></script>
+  </body>
+</html>
